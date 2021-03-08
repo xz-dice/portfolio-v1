@@ -1,0 +1,27 @@
+/*Create body of website - needs to be responsive*/
+
+* {
+   box-sizing: border-box;
+}
+
+/*Style nav bar with blue background and add flex display/
+Define height and width of nav bar.
+Make nav bar follow you down the page (not static)*/
+
+a {
+	color: #fff;
+	text-decoration: none;
+} 
+
+a:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+nav {
+	display: flex;
+	background-color: #0011a5;
+	color: #fff;
+	justify-content: space-between;
+}
+
