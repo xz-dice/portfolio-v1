@@ -4,24 +4,65 @@
    box-sizing: border-box;
 }
 
-/*Style nav bar with blue background and add flex display/
-Define height and width of nav bar.
-Make nav bar follow you down the page (not static)*/
-
+/*Style anchor tags with colours and transitions. Remove default values.*/
 a {
 	color: #fff;
 	text-decoration: none;
+	transition: 0.3s;
 } 
 
 a:hover {
-	color: #000;
+	color: #ffff00;
 	cursor: pointer;
 }
+
+
+/*Style div box holding nav bar links, no border, give it a primary colour*/
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+/*	background-color: #ff0000;*/
+	align-items: center;
+	font-family: 'Varela Round', sans-serif;
+
+	
+}
+
+/* Style font and colour of main 'name' header on nav bar*/
+h1 {
+	font-family: 'Fredoka One', cursive;
+	font-size: 30px;
+}
+/* Style list elements in nav bar so that they are not in-line and default styling is removed.
+Add shapes to background of each link*/
+
+li {
+	list-style-type: none;
+	margin-left: 10px;
+	
+	
+}
+
+/*style first section (main) and add background image with memphis shapes */
+main {
+	
+}
+
+/*style three div boxes with different shapes as background images*/
+
+/*Style nav bar with blue background and add flex display.
+Make nav bar follow you down the page (not static)*/
 
 nav {
 	display: flex;
 	background-color: #0011a5;
 	color: #fff;
 	justify-content: space-between;
+	padding: 10px;
+	height: 90px;
 }
+
+
+
 
