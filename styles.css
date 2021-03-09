@@ -1,5 +1,5 @@
 /*Create body of website - needs to be responsive*/
-/*/Colour scheme red: #ff6682 blue: #5Cffde purple: #713dff beige: #ffe5c7*/
+/*/Colour scheme red: #ff6682 blue: #5cffde purple: #713dff beige: #ffe5c7*/
 * {
    box-sizing: border-box;
 }
@@ -10,7 +10,7 @@
 	line-height: 50px;
 	font-family: 'Roboto';
 	padding: 40px;
-	font-weight: bold;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -22,11 +22,29 @@
 	font-style: italic;
 }
 
-.about-me p{
+.about-me a:hover {
+	color: #ff6682;
+}
+
+.about-me p {
 	display: inline;
 	background-color: #fff;
-	text-spacing: 20px;
 	line-height: 2rem;
+	word-spacing: 1px;
+}
+article {
+	background-color: #5cffde;
+}
+
+article p {
+	display: inline;
+	word-spacing: 2px;
+	line-height: 2rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	color: #000;
+	font-size: 15px;
+
 }
 
 div {
@@ -55,8 +73,32 @@ footer p {
 	width: 60px;
 }
 
-div img {
+/* Style font and colour of main 'name' header on nav bar*/
+h1 a {
+	font-family: 'Kanit', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+h1 a:hover{
+		color: #ff6682;
+		cursor: pointer;
+		transition: color 0.5s, font-size 0.5s;
+
+}
+
+h2 {
+	font-family: 'Kanit', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;	
+}
+img {
 	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+/*	width: 50%;*/
 }
 /* Style list elements in nav bar so that they are not in-line and default styling is removed. Animate links.*/
 
@@ -66,16 +108,16 @@ li {
 	font-size: 20px;	
 }
 
-li:hover {
+/*li:hover {
 	transition: color 0.5s, font-size 0.5s;
 	font-size: 22px;
-}
+}*/
 
 /*style first section (main) and add background image*/
 
 main {
 	display: flex;
-	background-color: #ffe5c7;
+	background-color: #fff;
 	width: 100%;
 	height: 650px;
 	justify-content: center;
@@ -86,25 +128,45 @@ main {
 main a {
 	color: #000;
 	text-decoration: none;
-	transition: 0.3s;
+/*	transition: 0.3s;*/
 	font-family: 'Roboto';
 	font-weight: 500;
 }
 
 /*style three div boxes with different shapes as background images*/
 
-.main {
+.about.main {
 	text-transform: uppercase;
-	background-color: #fff;
-	height: 50px;
-	padding: 15px;
+	text-align: center;
+	background-color: #5cffde;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	padding-top: 90px;
 	margin: 150px;
+	
+}
+
+.portfolio.main {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #fff;
+/*	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #000;*/
 	
 }
 
 .main a {
 	color: #000;
-	font-weight: 700;
+	font-weight: 800;
+}
+
+.main a:hover {
+		background-color: #ff6682;
+		cursor: pointer;
+		transition: color 0.5s, font-size 0.5s;
+		font-size: 22px;
 }
 /*Style nav bar with blue background and add flex display.
 Make nav bar follow you down the page (not static)*/
@@ -130,41 +192,44 @@ nav a {
 	font-weight: 700;
 } 
 
-nav a:hover {
-	background-color: #ff6682;
-	cursor: pointer;
-}
-
-.row {
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-	
-}
-
-/* Style font and colour of main 'name' header on nav bar*/
-h1 a {
-	font-family: 'Kanit', sans-serif;
-	font-size: 30px;
-	font-weight: 600;
-}
-
-h2 {
-	font-family: 'Kanit', sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;	
-}
-
 /*Style div boxes holding nav bar links, space list out, no border, give it a primary colour background?*/
 
 .nav-links {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;	
+	justify-content: space-around;
+	align-items: center;
 }
 
 .nav-home {
 	display: flex;
 	align-items: center;
 }
+
+.nav-links a:hover {
+	background-color: #ff6682;
+	cursor: pointer;
+	transition: color 0.5s, font-size 0.5s;
+	font-size: 22px;
+
+}
+
+.row {
+	display: flex;
+/*	flex-flow: wrap;*/
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px;
+	
+}
+
+.row div {
+	padding: 100px;
+}
+
+/*@media screen and (max-width: 400px){
+  .row {
+  	align-items: center;
+  	padding: 10px;
+  	width: 200px;
+  }
+}*/
