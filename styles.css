@@ -42,12 +42,6 @@ footer a {
 	font-weight: bold;
 }
 
-/* Style font and colour of main 'name' header on nav bar*/
-h1 {
-	font-family: 'Fredoka One', cursive;
-	font-size: 30px;
-	
-}
 
 /* Style list elements in nav bar so that they are not in-line and default styling is removed. Animate links.*/
 
@@ -73,11 +67,12 @@ main {
 	
 }
 
-main a{
+main a {
 		color: #fff;
 		text-decoration: none;
 		transition: 0.3s;
-		font-family: 'Varela Round', sans-serif;
+		font-family: 'Fredoka One', sans-serif;
+		font-weight: 400;
 }
 
 /*style three div boxes with different shapes as background images*/
@@ -109,7 +104,7 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 	transition: 0.3s;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Fredoka One', sans-serif;
 } 
 
 nav a:hover {
@@ -117,6 +112,12 @@ nav a:hover {
 	cursor: pointer;
 }
 
+/* Style font and colour of main 'name' header on nav bar*/
+h1 a {
+	font-family: 'Kanit', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+}
 
 /*Style div boxes holding nav bar links, space list out, no border, give it a primary colour background?*/
 
