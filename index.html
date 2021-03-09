@@ -5,13 +5,12 @@
 	<link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="home">
 <!--Create a nav bar -->
-	<nav id="home">
+	<nav>
 <!--Create two divs inside nav bar -->
 		<!-- First div - h1 element with full name and title -->
 		<div class="nav-home">
@@ -28,19 +27,28 @@
 	</nav>
 <!-- Create first section - main element with three divs inside -->
 <main>
-	<div>
-		<a href="#about">About</a>
-	</div>
-	<div>
-		<a href="#portfolio">Portfolio</a>
-	</div>
-	<div>
-		<a href="#contact">Contact</a>
-	</div>
+	<section>
+		<div class="about main">
+			<a href="#about">About</a>
+		</div>
+		<div class="portfolio main">
+			<a href="#portfolio">Portfolio</a>
+		</div>
+		<div class="contact main">
+			<a href="#contact">Contact</a>
+		</div>
+	</section>
 </main>
 <!-- Create about section with centered block of text - p element -->
-<section id="about">
-	<p>Tokushima chopped onions corn Sapporo abura soba pork bones pork bones fish broth salt Kagoshima sesame oil pork cubes Nagoya ground black pepper. Kagoshima Tokushima Nissin instant cup ramen ground black pepper Nagoya Hakata minced garlic bamboo slices Nagoya leek toasted sesame seeds. Lard rice Yokohama Hakata vinegar Sapporo Asahikawa Yokohama bean sprouts tsukemen soy milk. Ramen burger scallions scallions spicy bean paste Hakodate flavoured oil ramen burger chicken stock minced garlic spicy bean paste lard wood ear mushroom tsukemen Nissin instant cup ramen roasted pork slices ground black pepper bamboo slices bean sprouts. Abura soba miso bean sprouts Asahikawa chicken stock bean sprouts tsukemen vinegar butter bean sprouts Sapporo chopped onions chopped onions soy milk.</p>
+<section id="about" class="about-me">
+	<p>Xandice Armah is an open-format DJ from London and co-founder of <a href=“galpals.club”>Gal Pals</a>, an LGBTQ+ dance party centring women and excellent pop music.
+
+Xandice also DJs as part of the Brownton Abbey collective under the moniker Xzan. Xzan began their career playing at dingy basement birthday parties and are the biggest proponent for playing what you love and playing it loud. This mantra comes to life in the form of their high energy, hyperactive sets, ricocheting between queer pop party anthems and deep-cut club trax and wildcards.They are currently Mykki Blanco's UK tour DJ and have previously played at Glastonbury, Primavera and Brighton Festival.
+
+Xandice is a transmasculine non-binary person who uses they/them pronouns and in their spare time they enjoy playing video games, worrying about whether their plants have had enough water, and eating spicy noodles.
+
+They still find themselves occasionally DJing in basements, albeit much larger ones.
+</p>
 </section>
 <!-- Create article section for portfolio -->
 <article id="article">
@@ -49,7 +57,9 @@
 <!-- Create footer with one div with a p element -->
 <footer id="contact">
 	<div>
+		<p>Contact:</p>
 		<p>xandicearmah@gmail.com</p>
+		<p><a href="https://www.mixcloud.com/xzandj/">Mixcloud</a></p>
 	</div>
 </footer>
 </body>
