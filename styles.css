@@ -26,13 +26,6 @@ div {
 	display: inline-block;
 }
 
-/* Style font and colour of main 'name' header on nav bar*/
-h1 {
-	font-family: 'Fredoka One', cursive;
-	font-size: 30px;
-	
-}
-
 footer {
 	background-color: #0011a5;
 	color: #fff;
@@ -47,6 +40,13 @@ footer a {
 	transition: 0.3s;
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
+}
+
+/* Style font and colour of main 'name' header on nav bar*/
+h1 {
+	font-family: 'Fredoka One', cursive;
+	font-size: 30px;
+	
 }
 
 /* Style list elements in nav bar so that they are not in-line and default styling is removed. Animate links.*/
@@ -89,22 +89,6 @@ main a{
 	padding: 15px;
 	
 }
-
-/*.contact {
-	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
-	background-color: #fec500;
-	height: 50px;
-	padding: 15px;
-}
-
-.portfolio {
-	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
-	background-color: #fec500;
-}*/
 
 /*Style nav bar with blue background and add flex display.
 Make nav bar follow you down the page (not static)*/
