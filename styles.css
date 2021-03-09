@@ -4,46 +4,23 @@
    box-sizing: border-box;
 }
 
-/*Style anchor tags with colours and transitions. Remove default values.*/
-nav a {
+.about-me {
+	background-color: #fec500;
+	color: #000;
+	line-height: 50px;
+	font-family: 'Roboto';
+	padding: 40px;
+	font-weight: bold;
+}
+
+.about-me a {
 	color: #fff;
 	text-decoration: none;
 	transition: 0.3s;
-	font-family: 'Varela Round', sans-serif;
-} 
-
-nav a:hover {
-	color: #ffff00;
-	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
 }
 
-/*style three div boxes with different shapes as background images*/
-
-.main {
-	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
-	background-color: #fec500;
-	height: 50px;
-	padding: 15px;
-	
-}
-
-/*.contact {
-	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
-	background-color: #fec500;
-	height: 50px;
-	padding: 15px;
-}
-
-.portfolio {
-	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
-	background-color: #fec500;
-}*/
 
 div {
 	display: inline-block;
@@ -55,6 +32,23 @@ h1 {
 	font-size: 30px;
 	
 }
+
+footer {
+	background-color: #0011a5;
+	color: #fff;
+	font-family: 'Roboto';
+	padding: 25px;
+	font-weight: bold;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
 /* Style list elements in nav bar so that they are not in-line and default styling is removed. Animate links.*/
 
 li {
@@ -86,6 +80,34 @@ main a{
 		font-family: 'Varela Round', sans-serif;
 }
 
+/*style three div boxes with different shapes as background images*/
+
+.main {
+	text-transform: uppercase;
+	text-align: center;
+	justify-content: space-around;
+	background-color: #fec500;
+	height: 50px;
+	padding: 15px;
+	
+}
+
+/*.contact {
+	text-transform: uppercase;
+	text-align: center;
+	justify-content: space-around;
+	background-color: #fec500;
+	height: 50px;
+	padding: 15px;
+}
+
+.portfolio {
+	text-transform: uppercase;
+	text-align: center;
+	justify-content: space-around;
+	background-color: #fec500;
+}*/
+
 /*Style nav bar with blue background and add flex display.
 Make nav bar follow you down the page (not static)*/
 
@@ -102,6 +124,21 @@ nav {
 	height: 70px;  
 }
 
+/*Style nav anchor tags with colours and transitions. Remove default values.*/
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Varela Round', sans-serif;
+} 
+
+nav a:hover {
+	color: #ffff00;
+	cursor: pointer;
+}
+
+
 /*Style div boxes holding nav bar links, space list out, no border, give it a primary colour background?*/
 
 .nav-links {
@@ -115,27 +152,3 @@ nav {
 	display: flex;
 	align-items: center;
 }
-
-.about-me {
-	background-color: #fec500;
-	color: #000;
-	line-height: 50px;
-	font-family: 'Roboto';
-	padding: 40px;
-	font-weight: bold;
-}
-
-footer {
-	background-color: #0011a5;
-	color: #fff;
-	font-family: 'Roboto';
-	padding: 25px;
-	font-weight: bold;
-}
-
-footer a {
-	color: #fff;
-	text-decoration: none;
-	transition: 0.3s;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
