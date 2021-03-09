@@ -150,11 +150,23 @@ main a {
 .portfolio.main {
 	text-transform: uppercase;
 	text-align: center;
-	background-color: #fff;
-/*	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid #000;*/
-	
+	background-color: #713dff;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	padding-top: 90px;
+	margin: 150px;
+}
+
+.contact.main {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #ff6682;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	padding-top: 90px;
+	margin: 150px;
 }
 
 .main a {
@@ -163,7 +175,7 @@ main a {
 }
 
 .main a:hover {
-		background-color: #ff6682;
+		background-color: #fff;
 		cursor: pointer;
 		transition: color 0.5s, font-size 0.5s;
 		font-size: 22px;
@@ -227,9 +239,7 @@ nav a {
 }
 
 /*@media screen and (max-width: 400px){
-  .row {
-  	align-items: center;
-  	padding: 10px;
-  	width: 200px;
-  }
-}*/
+
+
+}
+*/
