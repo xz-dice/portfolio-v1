@@ -84,8 +84,6 @@ main a{
 
 .main {
 	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
 	background-color: #fec500;
 	height: 50px;
 	padding: 15px;
@@ -114,7 +112,6 @@ Make nav bar follow you down the page (not static)*/
 nav {
 	display: flex;
 	background-color: #0011a5;
-	color: #fff;
 	justify-content: space-between;
 	padding: 10px;
 	position: fixed;
@@ -144,8 +141,7 @@ nav a:hover {
 .nav-links {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	font-family: 'Varela Round', sans-serif;	
+	align-items: center;	
 }
 
 .nav-home {
