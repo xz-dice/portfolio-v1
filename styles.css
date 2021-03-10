@@ -1,4 +1,4 @@
-/*/Colour palette hex code RED: #ff6682 NAVY: #363166 BLUE: #61e8e1 PURPLE: #713dff BEIGE: #ffe5c7 BLACK: #2b2b2bb2b */
+/*/Colour palette hex code RED: #ff6682 NAVY: #363166 BLUE: #61e8e1 PURPLE: #713dff BEIGE: #ffe5c7 BLACK: #2b2b2b */
 
 * {
    box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 h1 a {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 900;
 }
 
@@ -25,7 +25,7 @@ h1 a:hover{
 li {
 	list-style-type: none;
 	margin-right: 10px;
-	font-size: 20px;	
+	font-size: 30px;	
 }
 
 /*Style nav bar with blue background and add flex display. Make nav bar follow you down the page (not static)*/
@@ -43,7 +43,7 @@ nav {
 /*Style nav anchor elements with colours and transitions. Remove default values.*/
 
 nav a {
-	color: #2b2b2b;
+	color: #363166;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: 0.3s;
@@ -51,7 +51,7 @@ nav a {
 	font-weight: 700;
 } 
 
-/*Style div boxes holding nav bar links, space list out, no border, give it a primary colour background?*/
+/*Style div boxes holding nav bar links, space list out, no border, give it a colour background?*/
 
 .nav-links {
 	display: flex;
@@ -68,7 +68,7 @@ nav a {
 	background-color: #ff6682;
 	cursor: pointer;
 	transition: color 0.5s, font-size 0.5s;
-	font-size: 22px;
+	font-size: 32px;
 
 }
 
@@ -99,7 +99,7 @@ main a {
 }
 
 .main a {
-	color: #2b2b2b;
+/*	color: #2b2b2b;*/
 	font-weight: 800;
 }
 
@@ -150,7 +150,6 @@ main a {
 
 .about-me {
 	background-color: #713dff;
-	color: #2b2b2b;
 	line-height: 50px;
 	font-family: 'Work Sans', sans-serif;
 	padding: 40px;
@@ -172,7 +171,7 @@ main a {
 
 section.bio {
 	background-color: #fff;
-	line-height: 50px;
+	line-height: 70px; 
 	font-family: 'Work Sans', sans-serif;
 	padding: 40px;
 	font-weight: 900;
@@ -219,9 +218,17 @@ article p {
 	line-height: 2rem;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 900;
-	color: #2b2b2b;
+	color: #363166;
 	font-size: 15px;
 
+}
+
+h2 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;	
+	color: #363166;
 }
 
 img {
@@ -246,14 +253,9 @@ img {
 
 /*---------------FOOTER----------------*/
 
-h2 {
-	font-family: 'Work Sans', sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;	
-}
-
 footer {
+	display: flex;
+	justify-content: space-between;
 	background-color: #ff6682;
 	color: #fff;
 	font-family: 'Work Sans', sans-serif;
@@ -262,7 +264,6 @@ footer {
 }
 
 footer a {
-	background-color: #ff6682;
 	color: #fff;
 	text-decoration: none;
 	transition: 0.3s;
@@ -270,8 +271,15 @@ footer a {
 	font-weight: 400;
 }
 
+footer a:hover{
+	background-color: #363166;
+	cursor: pointer;
+	transition: color 0.5s, font-size 0.5s;
+	font-size: 32px;
+}
+
 footer p {
-	color: #2b2b2b;
+	color: #fff;
 	width: 60px;
 }
 
