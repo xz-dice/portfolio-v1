@@ -166,7 +166,7 @@ article p {
 	font-weight: 900;
 	color: #363166;
 	font-size: 15px;
-
+	font-style: italic;
 }
 
 
@@ -197,6 +197,9 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 
+}
+img:hover {
+	opacity: 0.7;
 }
 
 div.project-one, .project-three {
