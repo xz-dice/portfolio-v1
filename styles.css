@@ -1,79 +1,13 @@
-/*Create body of website - needs to be responsive*/
-/*/Colour scheme red: #ff6682 blue: #5cffde purple: #713dff beige: #ffe5c7*/
+/*/Colour palette hex code RED: #ff6682 CYAN: #5cffde PURPLE: #713dff BEIGE: #ffe5c7*/
+
 * {
    box-sizing: border-box;
 }
 
-.about-me {
-	background-color: #713dff;
-	color: #000;
-	line-height: 50px;
-	font-family: 'Roboto';
-	padding: 40px;
-	font-weight: 600;
-	text-align: center;
-}
-
-.about-me a {
-	color: #000;
-	text-decoration: none;
-	transition: 0.3s;
-	font-family: 'Roboto', sans-serif;
-	font-style: italic;
-}
-
-.about-me a:hover {
-	color: #ff6682;
-}
-
-.about-me p {
-	display: inline;
-	background-color: #fff;
-	line-height: 2rem;
-	word-spacing: 1px;
-}
-article {
-	background-color: #5cffde;
-}
-
-article p {
-	display: inline;
-	word-spacing: 2px;
-	line-height: 2rem;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 600;
-	color: #000;
-	font-size: 15px;
-
-}
-
-div {
-	display: inline-block;
-}
-
-footer {
-	background-color: #ff6682;
-	color: #fff;
-	font-family: 'Roboto';
-	padding: 25px;
-	font-weight: bold;
-}
-
-footer a {
-	background-color: #ff6682;
-	color: #fff;
-	text-decoration: none;
-	transition: 0.3s;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
-}
-
-footer p {
-	background-color: #000;
-	width: 60px;
-}
+/*---------------NAVIGATION----------------*/
 
 /* Style font and colour of main 'name' header on nav bar*/
+
 h1 a {
 	font-family: 'Kanit', sans-serif;
 	font-size: 30px;
@@ -84,22 +18,8 @@ h1 a:hover{
 		color: #ff6682;
 		cursor: pointer;
 		transition: color 0.5s, font-size 0.5s;
-
 }
 
-h2 {
-	font-family: 'Kanit', sans-serif;
-	font-size: 20px;
-	font-weight: 400;
-	text-align: center;	
-}
-img {
-	height: 200px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-/*	width: 50%;*/
-}
 /* Style list elements in nav bar so that they are not in-line and default styling is removed. Animate links.*/
 
 li {
@@ -108,10 +28,55 @@ li {
 	font-size: 20px;	
 }
 
-/*li:hover {
+/*Style nav bar with blue background and add flex display. Make nav bar follow you down the page (not static)*/
+
+nav {
+	display: flex;
+	background-color: #ffe5c7;
+	justify-content: space-between;
+	padding: 10px;
+	position: fixed;     
+	width: 100%;
+	height: 70px;  
+}
+
+/*Style nav anchor elements with colours and transitions. Remove default values.*/
+
+nav a {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Roboto';
+	font-weight: 700;
+} 
+
+/*Style div boxes holding nav bar links, space list out, no border, give it a primary colour background?*/
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-home {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links a:hover {
+	background-color: #ff6682;
+	cursor: pointer;
 	transition: color 0.5s, font-size 0.5s;
 	font-size: 22px;
-}*/
+
+}
+
+/*---------------HEADER/MAIN----------------*/
+
+div {
+	display: inline-block;
+}
 
 /*style first section (main) and add background image*/
 
@@ -133,7 +98,19 @@ main a {
 	font-weight: 500;
 }
 
-/*style three div boxes with different shapes as background images*/
+.main a {
+	color: #000;
+	font-weight: 800;
+}
+
+.main a:hover {
+		background-color: #fff;
+		cursor: pointer;
+		transition: color 0.5s, font-size 0.5s;
+		font-size: 22px;
+}
+
+/*style three div boxes/buttons with different background images*/
 
 .about.main {
 	text-transform: uppercase;
@@ -169,74 +146,106 @@ main a {
 	margin: 150px;
 }
 
-.main a {
+/*---------------ABOUT----------------*/
+
+.about-me {
+	background-color: #713dff;
 	color: #000;
-	font-weight: 800;
+	line-height: 50px;
+	font-family: 'Roboto';
+	padding: 40px;
+	font-weight: 600;
+	text-align: center;
 }
 
-.main a:hover {
-		background-color: #fff;
-		cursor: pointer;
-		transition: color 0.5s, font-size 0.5s;
-		font-size: 22px;
-}
-/*Style nav bar with blue background and add flex display.
-Make nav bar follow you down the page (not static)*/
-
-nav {
-	display: flex;
-	background-color: #ffe5c7;
-	justify-content: space-between;
-	padding: 10px;
-	position: fixed;     
-	width: 100%;
-	height: 70px;  
-}
-
-/*Style nav anchor tags with colours and transitions. Remove default values.*/
-
-nav a {
+.about-me a {
 	color: #000;
-	text-transform: uppercase;
 	text-decoration: none;
 	transition: 0.3s;
-	font-family: 'Roboto';
-	font-weight: 700;
-} 
-
-/*Style div boxes holding nav bar links, space list out, no border, give it a primary colour background?*/
-
-.nav-links {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
 }
 
-.nav-home {
-	display: flex;
-	align-items: center;
+.about-me a:hover {
+	color: #ff6682;
 }
 
-.nav-links a:hover {
-	background-color: #ff6682;
-	cursor: pointer;
-	transition: color 0.5s, font-size 0.5s;
-	font-size: 22px;
+.about-me p {
+	display: inline;
+	background-color: #fff;
+	line-height: 2rem;
+	word-spacing: 1px;
+}
+
+/*---------------PORTFOLIO----------------*/
+
+article {
+	background-color: #5cffde;
+}
+
+article p {
+	display: inline;
+	word-spacing: 2px;
+	line-height: 2rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	color: #000;
+	font-size: 15px;
+
+}
+
+img {
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
 .row {
 	display: flex;
-/*	flex-flow: wrap;*/
 	justify-content: space-around;
 	align-items: center;
 	padding: 50px;
-	
+
 }
 
 .row div {
 	padding: 100px;
 }
+
+/*---------------FOOTER----------------*/
+
+h2 {
+	font-family: 'Kanit', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;	
+}
+
+footer {
+	background-color: #ff6682;
+	color: #fff;
+	font-family: 'Roboto';
+	padding: 25px;
+	font-weight: bold;
+}
+
+footer a {
+	background-color: #ff6682;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+footer p {
+	background-color: #000;
+	width: 60px;
+}
+
+/*---------------RESPONSIVE----------------*/
 
 /*@media screen and (max-width: 400px){
 
