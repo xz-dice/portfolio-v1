@@ -74,10 +74,10 @@ nav a {
 
 /*---------------HEADER/MAIN----------------*/
 
-div {
+/*div {
 	display: inline-block;
 }
-
+*/
 /*style first section (main) and add background image*/
 
 main {
@@ -110,9 +110,42 @@ main a {
 		font-size: 22px;
 }
 
+main section {
+	display: flex;
+}
+
+section img {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	height: 650px;
+}
+
+.about.main{
+	text-align: center;
+	padding-bottom: 150px;
+}
+
+div.about {
+	width: 100%;
+	height: auto%;
+}
+	
+
+
+div.portfolio {
+	
+}
+
+div.contact {
+	
+	
+}
+
 /*style three div boxes/buttons with different background images*/
 
-.about.main {
+/*.about.main {
 	text-transform: uppercase;
 	text-align: center;
 	background-color: #61e8e1;
@@ -121,7 +154,7 @@ main a {
 	border-radius: 100%;
 	padding-top: 90px;
 	margin: 150px;
-	
+
 }
 
 .portfolio.main {
@@ -144,7 +177,8 @@ main a {
 	border-radius: 100%;
 	padding-top: 90px;
 	margin: 150px;
-}
+}*/
+
 
 /*---------------ABOUT----------------*/
 
@@ -239,7 +273,7 @@ img {
 
 }
 
-img:hover {
+article img:hover {
 	opacity: 0.5;
 	
 }
