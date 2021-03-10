@@ -1,4 +1,4 @@
-/*/Colour palette hex code RED: #ff6682 CYAN: #5cffde PURPLE: #713dff BEIGE: #ffe5c7*/
+/*/Colour palette hex code RED: #ff6682 BLUE: #61e8e1 PURPLE: #713dff BEIGE: #ffe5c7 BLACK: #2b2b2bb2b */
 
 * {
    box-sizing: border-box;
@@ -43,7 +43,7 @@ nav {
 /*Style nav anchor elements with colours and transitions. Remove default values.*/
 
 nav a {
-	color: #000;
+	color: #2b2b2b;
 	text-transform: uppercase;
 	text-decoration: none;
 	transition: 0.3s;
@@ -91,7 +91,7 @@ main {
 }
 
 main a {
-	color: #000;
+	color: #2b2b2b;
 	text-decoration: none;
 /*	transition: 0.3s;*/
 	font-family: 'Roboto';
@@ -99,7 +99,7 @@ main a {
 }
 
 .main a {
-	color: #000;
+	color: #2b2b2b;
 	font-weight: 800;
 }
 
@@ -115,7 +115,7 @@ main a {
 .about.main {
 	text-transform: uppercase;
 	text-align: center;
-	background-color: #5cffde;
+	background-color: #61e8e1;
 	height: 200px;
 	width: 200px;
 	border-radius: 100%;
@@ -150,7 +150,7 @@ main a {
 
 .about-me {
 	background-color: #713dff;
-	color: #000;
+	color: #2b2b2b;
 	line-height: 50px;
 	font-family: 'Roboto';
 	padding: 40px;
@@ -159,7 +159,7 @@ main a {
 }
 
 .about-me a {
-	color: #000;
+	color: #2b2b2b;
 	text-decoration: none;
 	transition: 0.3s;
 	font-family: 'Roboto', sans-serif;
@@ -180,7 +180,7 @@ main a {
 /*---------------PORTFOLIO----------------*/
 
 article {
-	background-color: #5cffde;
+	background-color: #61e8e1;
 }
 
 article p {
@@ -189,7 +189,7 @@ article p {
 	line-height: 2rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
-	color: #000;
+	color: #2b2b2b;
 	font-size: 15px;
 
 }
@@ -241,7 +241,7 @@ footer a {
 }
 
 footer p {
-	background-color: #000;
+	background-color: #2b2b2b;
 	width: 60px;
 }
 
