@@ -169,6 +169,7 @@ h2 {
 img {
 	height: 200px;
 	display: block;
+	margin: 0 auto;
 }
 
 
@@ -180,7 +181,7 @@ img {
 }
 
 .row article {
-	padding: 100px;
+	padding: 100px; 
 }
 
 /*---------------FOOTER----------------*/
@@ -219,9 +220,10 @@ footer p {
 /*---------------RESPONSIVE----------------*/
 
 @media screen and (max-width: 1000px){
-section.row {
-	display: inline-block;
+.row article {
+	width: 50%;
 }
+
 
 .right-img {
 	  object-fit: cover;
@@ -247,4 +249,9 @@ footer span::before {
   content: "";
 }
 
-}		
+}	
+	
+@media screen and (max-width: 750px){
+.row article {
+	width: 50%;
+}
