@@ -153,16 +153,11 @@ a h2:hover {
 	font-size: 32px;
 }
 
-article {
-	background-color: #61e8e1;
-	display: flex;
-}
-
-article img:hover {
+section img:hover {
 	opacity: 0.7;
 }
 
-article p {
+section div p {
 	display: inline;
 	word-spacing: 2px;
 	line-height: 2rem;
@@ -190,6 +185,8 @@ img {
 
 
 .row {
+	background-color: #61e8e1;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-left: auto;
@@ -238,7 +235,7 @@ footer p {
 /*---------------RESPONSIVE----------------*/
 
 @media screen and (max-width: 1000px){
-article {
+section.row {
 	display: inline-block;
 }
 
