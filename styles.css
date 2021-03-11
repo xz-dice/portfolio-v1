@@ -1,148 +1,263 @@
-/*Create body of website - needs to be responsive*/
-/*/Colour scheme red: #ff0000 blue: #0011a5 green: #14ad00 yellow: #fec500*/
+/*/Colour palette hex code RED: #ff6682 NAVY: #363166 BLUE: #61e8e1 PURPLE: #713dff BEIGE: #ffe5c7 BLACK: #2b2b2b */
+
 * {
    box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/*---------------NAVIGATION----------------*/
+
+/* Style font and colour of main 'name' header on nav bar*/
+
+h1 a {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+h1 a:hover{
+		color: #ff6682;
+		cursor: pointer;
+		transition: color 0.5s, font-size 0.5s;
+}
+
+/* Style list elements in nav bar so that they are not in-line and default styling is removed.*/
+
+li {
+	list-style-type: none;
+	margin-right: 10px;
+	font-size: 30px;	
+}
+
+/*Style nav bar with blue background and add flex display. Make nav bar follow you down the page (not static)*/
+
+nav {
+	display: flex;
+	background-color: #ffe5c7;
+	justify-content: space-between;
+	padding: 15px;
+	position: fixed; 
+	z-index: 100;    
+	width: 100%;
+	height: 70px;  
+}
+
+/*Style nav anchor elements with colours and transitions. Remove default values.*/
+
+nav a {
+	color: #363166;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+} 
+
+/*Style div boxes holding nav bar links, space list out, no border, give it a colour background? Animate links.*/
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-home {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links a:hover {
+	background-color: #ff6682;
+	color: #363166;
+	cursor: pointer;
+	transition: color 0.5s, font-size 0.5s;
+	font-size: 32px;
+}
+
+/*---------------HEADER/MAIN----------------*/
+/*style first section (main) and add background image*/
+
+main {
+	width: 100%;
+	height: 650px;
+}
+
+main section {
+	display: flex;
+}	
+
+section img {
+	width: 100%;
+	height: 650px;
+	object-fit: cover;
+}
+/*style three div boxes/buttons with different background images*/
+
+/*---------------ABOUT----------------*/
+
 .about-me {
-	background-color: #fec500;
-	color: #000;
+	background-color: #713dff;
 	line-height: 50px;
-	font-family: 'Roboto';
+	font-family: 'Work Sans', sans-serif;
 	padding: 40px;
-	font-weight: bold;
+	font-weight: 900;
+	text-align: left;
 }
 
 .about-me a {
 	color: #fff;
-	text-decoration: none;
+	text-decoration: none; 
 	transition: 0.3s;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	font-style: italic;
+}
+
+.about-me a:hover {
+	color: #ff6682;
+}
+
+section.bio {
+	background-color: #fff;
+	line-height: 70px; 
+	font-family: 'Work Sans', sans-serif;
+	padding: 40px;
+}
+
+p.intro {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 900;
+	font-size: 60px;
+}
+
+p.sub-heading {
+	color: #fff;
+	font-weight: 400;
+	font-size: 40px;
+	display: inline;
+}
+
+p {
+	color: #363166;
+	font-weight: 600;
+	font-size: 20px;
+	display: inline;
+	line-height: 2rem;
+	word-spacing: 1px;
+}
+/*---------------PORTFOLIO----------------*/
+
+article {
+	background-color: #61e8e1;
+	display: flex;
+}
+
+article p {
+	display: inline;
+	word-spacing: 2px;
+	line-height: 2rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 900;
+	color: #363166;
+	font-size: 15px;
 	font-style: italic;
 }
 
 
-div {
-	display: inline-block;
+h2 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;	
+	color: #fff;
 }
 
-/* Style font and colour of main 'name' header on nav bar*/
-h1 {
-	font-family: 'Fredoka One', cursive;
-	font-size: 30px;
-	
+a {
+	text-decoration: none;
 }
+
+a h2:hover {
+	background-color: #ff6682;
+	cursor: pointer;
+	transition: color 0.5s, font-size 0.5s;
+	color: #363166;
+	cursor: pointer;
+	font-size: 32px;
+}
+
+img {
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+article img:hover {
+	opacity: 0.7;
+}
+
+.row {
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.row div {
+	padding: 100px;
+}
+
+/*---------------FOOTER----------------*/
 
 footer {
-	background-color: #0011a5;
-	color: #fff;
-	font-family: 'Roboto';
-	padding: 25px;
-	font-weight: bold;
+	display: flex;
+	background-color: #ff6682;
+	font-family: 'Work Sans', sans-serif;
+	padding: 45px;
+	height: 12rem;
+	font-size: 20px;
 }
 
 footer a {
 	color: #fff;
 	text-decoration: none;
 	transition: 0.3s;
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 }
 
-/* Style list elements in nav bar so that they are not in-line and default styling is removed. Animate links.*/
-
-li {
-	list-style-type: none;
-	margin-right: 10px;
-	font-size: 20px;	
-}
-
-li:hover {
+footer a:hover{
+	background-color: #363166;
+	cursor: pointer;
 	transition: color 0.5s, font-size 0.5s;
 	font-size: 22px;
 }
 
-/*style first section (main) and add background image*/
-main {
-	display: flex;
-	background-color: #fff;
-	width: 100%;
-	height: 650px;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-main a{
-		color: #fff;
-		text-decoration: none;
-		transition: 0.3s;
-		font-family: 'Varela Round', sans-serif;
-}
-
-/*style three div boxes with different shapes as background images*/
-
-.main {
-	text-transform: uppercase;
-	background-color: #fec500;
-	height: 50px;
-	padding: 15px;
-	
-}
-
-/*.contact {
-	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
-	background-color: #fec500;
-	height: 50px;
-	padding: 15px;
-}
-
-.portfolio {
-	text-transform: uppercase;
-	text-align: center;
-	justify-content: space-around;
-	background-color: #fec500;
-}*/
-
-/*Style nav bar with blue background and add flex display.
-Make nav bar follow you down the page (not static)*/
-
-nav {
-	display: flex;
-	background-color: #0011a5;
-	justify-content: space-between;
-	padding: 10px;
-	position: fixed;     
-	width: 100%;
-	height: 70px;  
-}
-
-/*Style nav anchor tags with colours and transitions. Remove default values.*/
-
-nav a {
+footer p {
 	color: #fff;
-	text-decoration: none;
-	transition: 0.3s;
-	font-family: 'Varela Round', sans-serif;
-} 
-
-nav a:hover {
-	color: #ffff00;
-	cursor: pointer;
+	width: 60px;
 }
 
-
-/*Style div boxes holding nav bar links, space list out, no border, give it a primary colour background?*/
-
-.nav-links {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;	
+div.contact-me {
+	padding-right: 200px;
 }
 
-.nav-home {
-	display: flex;
-	align-items: center;
+/*---------------RESPONSIVE----------------*/
+
+@media screen and (max-width: 1000px){
+article {
+	display: inline-block;
+}
+
+.right-img {
+	  object-fit: cover;
+	  object-position: 100% -50%;
+	}
 }
