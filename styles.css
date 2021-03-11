@@ -129,11 +129,15 @@ p.sub-heading {
 
 section.bio {
 	background-color: #fff;
-	line-height: 70px; 
+	line-height: 45px; 
 	font-family: 'Work Sans', sans-serif;
-	padding: 40px;
+	padding: 25px;
 }
 
+span::before {
+  content: "\A";
+   white-space: pre;
+}
 /*---------------PORTFOLIO----------------*/
 
 a {
