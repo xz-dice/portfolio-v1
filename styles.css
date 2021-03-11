@@ -177,11 +177,12 @@ img {
 	background-color: #61e8e1;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	flex-wrap: wrap;
 }
 
 .row article {
-	padding: 100px; 
+	padding: 4%;
+	width: 33%; 
 }
 
 /*---------------FOOTER----------------*/
@@ -251,7 +252,7 @@ footer span::before {
 
 }	
 	
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
 .row article {
-	width: 50%;
+	width: 100%;
 }
