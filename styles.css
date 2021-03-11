@@ -5,12 +5,12 @@
 html, body {
     height: 100%;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+	font-family: 'Work Sans', sans-serif; 
 }
 
 /*---------------NAVIGATION----------------*/
 h1 a {
-	font-family: 'Work Sans', sans-serif;
 	font-size: 40px;
 	font-weight: 900;
 }
@@ -42,8 +42,7 @@ nav a {
 	color: #363166;
 	text-transform: uppercase;
 	text-decoration: none;
-	transition: 0.3s;
-	font-family: 'Work Sans', sans-serif;
+	transition: 0.3s;	
 	font-weight: 700;
 } 
 
@@ -84,8 +83,7 @@ main img {
 
 .about-me {
 	background-color: #713dff;
-	line-height: 50px;
-	font-family: 'Work Sans', sans-serif;
+	line-height: 50px;	
 	padding: 40px;
 	font-weight: 900;
 	text-align: left;
@@ -94,8 +92,7 @@ main img {
 .about-me a {
 	color: #fff;
 	text-decoration: none; 
-	transition: 0.3s;
-	font-family: 'Work Sans', sans-serif;
+	transition: 0.3s;	
 	font-style: italic;
 }
 
@@ -129,8 +126,7 @@ p.sub-heading {
 
 section.bio {
 	background-color: #fff;
-	line-height: 45px; 
-	font-family: 'Work Sans', sans-serif;
+	line-height: 45px; 	
 	padding: 25px;
 }
 
@@ -160,16 +156,14 @@ section img:hover {
 section article p {
 	display: inline;
 	word-spacing: 2px;
-	line-height: 2rem;
-	font-family: 'Work Sans', sans-serif;
+	line-height: 2rem;	
 	font-weight: 900;
 	color: #363166;
 	font-size: 15px;
 	font-style: italic;
 }
 
-h2 {
-	font-family: 'Work Sans', sans-serif;
+h2 {	
 	font-size: 30px;
 	font-weight: 600;
 	text-align: center;	
@@ -206,7 +200,6 @@ div.contact-me {
 footer {
 	display: flex;
 	background-color: #ff6682;
-	font-family: 'Work Sans', sans-serif;
 	padding: 45px;
 	height: 150px;
 	font-size: 20px;
@@ -215,8 +208,7 @@ footer {
 footer a {
 	color: #fff;
 	text-decoration: none;
-	transition: 0.3s;
-	font-family: 'Work Sans', sans-serif;
+	transition: 0.3s;	
 	font-weight: 400;
 }
 
