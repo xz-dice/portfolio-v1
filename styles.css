@@ -157,7 +157,7 @@ section img:hover {
 	opacity: 0.7;
 }
 
-section div p {
+section article p {
 	display: inline;
 	word-spacing: 2px;
 	line-height: 2rem;
@@ -193,7 +193,7 @@ img {
 	margin-right: auto;
 }
 
-.row div {
+.row article {
 	padding: 100px;
 }
 
@@ -208,7 +208,7 @@ footer {
 	background-color: #ff6682;
 	font-family: 'Work Sans', sans-serif;
 	padding: 45px;
-	height: 12rem;
+	height: 150px;
 	font-size: 20px;
 }
 
@@ -251,4 +251,16 @@ h1 a {
 li {
 	font-size: 20px;
 }
-		
+
+footer {
+	display: block;
+	padding: 10px;
+	font-size: 15px;
+	height: 100px;
+}
+
+footer span::before {
+  content: "";
+}
+
+}		
