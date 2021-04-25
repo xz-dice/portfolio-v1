@@ -136,12 +136,11 @@ a {
 	text-decoration: none;
 }
 
-a h2:hover {
+h2:hover {
 	background-color: #ff6682;
 	cursor: pointer;
 	transition: color 0.5s, font-size 0.5s;
 	color: #363166;
-	cursor: pointer;
 	font-size: 32px;
 }
 
@@ -255,4 +254,4 @@ footer span::before {
 @media screen and (max-width: 800px){
 .row article {
 	width: 100%;
-}
+}}
