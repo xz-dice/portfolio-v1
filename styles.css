@@ -81,9 +81,16 @@ main img {
 
 .about-me {
 	background-color: #713dff;
-	line-height: 50px;	
-	padding: 40px;
+	margin: 0 auto;
+}
+
+.about-me div {
+	display: flex;
+	align-items: center;
+	height: 15rem;
 	font-weight: 900;
+	width: 100%;
+	padding: 0 20px;
 }
 
 .about-me a {
@@ -97,39 +104,51 @@ main img {
 	color: #ff6682;
 }
 
+.container {
+	max-width: 1200px;
+	height: 20rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px
+}
+
 p {
 	color: #363166;
 	font-weight: 600;
 	font-size: 20px;
-	display: inline;
-	line-height: 2rem;
+	line-height: 4rem;
 	word-spacing: 1px;
+	text-align: justify;
 }
 
-p.intro {
+.flip {
+	transform: rotateX(360deg);
+	transition: transform .6s;
+}
+
+.intro p{
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: 900;
-	font-size: 60px;
+	font-size: 50px;
 }
 
 p.sub-heading {
 	color: #fff;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 20px;
 }
-
 
 section.bio {
 	background-color: #fff;
-	line-height: 45px; 	
-	padding: 25px;
+	height: 20rem;
+	padding: 20px;
 }
 
-span::before {
-  content: "\A";
-   white-space: pre;
+span {
+	display: inline-block;
 }
+
 /*---------------PORTFOLIO----------------*/
 
 a {
@@ -141,7 +160,6 @@ a h2:hover {
 	cursor: pointer;
 	transition: color 0.5s, font-size 0.5s;
 	color: #363166;
-	cursor: pointer;
 	font-size: 32px;
 }
 
@@ -246,13 +264,11 @@ footer {
 	height: 100px;
 }
 
-footer span::before {
-  content: "";
-}
-
 }	
 	
-@media screen and (max-width: 800px){
-.row article {
-	width: 100%;
+@media screen and (max-width: 800px) {
+	.row article {
+		width: 100%;
+	}
 }
+
